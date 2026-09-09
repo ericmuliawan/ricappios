@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04E39A782FF875BA00962D8E /* ricappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E39A772FF875BA00962D8E /* ricappApp.swift */; };
+		04E39A7A2FF875BA00962D8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E39A792FF875BA00962D8E /* ContentView.swift */; };
+		04E39A7C2FF875BC00962D8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E39A7B2FF875BC00962D8E /* Assets.xcassets */; };
+		04E39A7F2FF875BC00962D8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E39A7E2FF875BC00962D8E /* Preview Assets.xcassets */; };
+		04E39A892FF875BD00962D8E /* ricappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E39A882FF875BD00962D8E /* ricappTests.swift */; };
+		04E39A932FF875BD00962D8E /* ricappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E39A922FF875BD00962D8E /* ricappUITests.swift */; };
+		04E39A952FF875BD00962D8E /* ricappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E39A942FF875BD00962D8E /* ricappUITestsLaunchTests.swift */; };
+		157C3492B94B2860B2A9D236 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFF8B92D307A8E603710433 /* LoginView.swift */; };
+		1875E57BBBC4A9D607A13F1B /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD38C8A1291C7BCED42CB66 /* CameraService.swift */; };
+		1F763EA8A56935CA5740CC5E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B88379B7E2E571B6824B0913 /* RegistrationView.swift */; };
+		2DE1DD95F62AE0A4634E743D /* AttendanceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B11426EC9DFA90B536277F /* AttendanceDetailView.swift */; };
+		31216979EE267A69A6B43CC6 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C97E3C568FAE348D62BD5EF /* LocationService.swift */; };
+		32CB1868EAA4E5B1EEA21950 /* MonthlyReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67C1764789EFD548350A91F /* MonthlyReportView.swift */; };
+		6F361B33DF675254FA21526B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26410FAC473438C1421769F /* User.swift */; };
+		81EE2963456B23164AE57985 /* Attendance.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC1260DB2AE5374BAC08827 /* Attendance.swift */; };
+		891FA3FF709A3E9198BBECA7 /* AttendanceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F824CA7A8091ED3EC3C9E /* AttendanceHistoryView.swift */; };
+		9D46DA3C0D7D740E202139AA /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDFDE60AF6B3F78B27F8E5 /* MainTabView.swift */; };
+		C4029FDF141E4C0A3D3DDE5F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44191AD76CC5209F75D2A4CD /* CameraView.swift */; };
+		CA0B01372CBCF98F7CD6B2E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDABA86CD57B35C795599 /* HomeView.swift */; };
+		DC5D83C89F8203354C3B0B4F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A83E7937FD54876D9F4F1D /* ProfileView.swift */; };
+		F26AE568EF6036457F08B6B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE86F29F17CD9A3BFEA17 /* DataService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04E39A852FF875BD00962D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E39A6C2FF875B900962D8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E39A732FF875BA00962D8E;
+			remoteInfo = ricapp;
+		};
+		04E39A8F2FF875BD00962D8E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04E39A6C2FF875B900962D8E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04E39A732FF875BA00962D8E;
+			remoteInfo = ricapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04E39A742FF875BA00962D8E /* ricapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ricapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E39A772FF875BA00962D8E /* ricappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricappApp.swift; sourceTree = "<group>"; };
+		04E39A792FF875BA00962D8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04E39A7B2FF875BC00962D8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E39A7E2FF875BC00962D8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04E39A842FF875BD00962D8E /* ricappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E39A882FF875BD00962D8E /* ricappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricappTests.swift; sourceTree = "<group>"; };
+		04E39A8E2FF875BD00962D8E /* ricappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ricappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E39A922FF875BD00962D8E /* ricappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricappUITests.swift; sourceTree = "<group>"; };
+		04E39A942FF875BD00962D8E /* ricappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ricappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		093AE86F29F17CD9A3BFEA17 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		1D3F824CA7A8091ED3EC3C9E /* AttendanceHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryView.swift; sourceTree = "<group>"; };
+		44191AD76CC5209F75D2A4CD /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		45A83E7937FD54876D9F4F1D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6C97E3C568FAE348D62BD5EF /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		6FD38C8A1291C7BCED42CB66 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		8BFF8B92D307A8E603710433 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A26410FAC473438C1421769F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AAECDABA86CD57B35C795599 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ABC1260DB2AE5374BAC08827 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
+		B67C1764789EFD548350A91F /* MonthlyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportView.swift; sourceTree = "<group>"; };
+		B88379B7E2E571B6824B0913 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		DBCDFDE60AF6B3F78B27F8E5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		F2B11426EC9DFA90B536277F /* AttendanceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04E39A712FF875BA00962D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A812FF875BD00962D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A8B2FF875BD00962D8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04E39A6B2FF875B900962D8E = {
+			isa = PBXGroup;
+			children = (
+				04E39A762FF875BA00962D8E /* ricapp */,
+				04E39A872FF875BD00962D8E /* ricappTests */,
+				04E39A912FF875BD00962D8E /* ricappUITests */,
+				04E39A752FF875BA00962D8E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04E39A752FF875BA00962D8E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04E39A742FF875BA00962D8E /* ricapp.app */,
+				04E39A842FF875BD00962D8E /* ricappTests.xctest */,
+				04E39A8E2FF875BD00962D8E /* ricappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04E39A762FF875BA00962D8E /* ricapp */ = {
+			isa = PBXGroup;
+			children = (
+				04E39A772FF875BA00962D8E /* ricappApp.swift */,
+				04E39A792FF875BA00962D8E /* ContentView.swift */,
+				C1708942CF4E29CFFE19D29B /* Models */,
+				40A9B7E70A8BB7A168CEEC12 /* Services */,
+				A34CDFBFEA951D01AD9438A6 /* Views */,
+				04E39A7B2FF875BC00962D8E /* Assets.xcassets */,
+				04E39A7D2FF875BC00962D8E /* Preview Content */,
+			);
+			path = ricapp;
+			sourceTree = "<group>";
+		};
+		04E39A7D2FF875BC00962D8E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04E39A7E2FF875BC00962D8E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04E39A872FF875BD00962D8E /* ricappTests */ = {
+			isa = PBXGroup;
+			children = (
+				04E39A882FF875BD00962D8E /* ricappTests.swift */,
+			);
+			path = ricappTests;
+			sourceTree = "<group>";
+		};
+		04E39A912FF875BD00962D8E /* ricappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04E39A922FF875BD00962D8E /* ricappUITests.swift */,
+				04E39A942FF875BD00962D8E /* ricappUITestsLaunchTests.swift */,
+			);
+			path = ricappUITests;
+			sourceTree = "<group>";
+		};
+		28EBB25B9AA8CC2F6B73539E /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				B88379B7E2E571B6824B0913 /* RegistrationView.swift */,
+				8BFF8B92D307A8E603710433 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		32A126088FBB1AB7A3BE4543 /* Reports */ = {
+			isa = PBXGroup;
+			children = (
+				B67C1764789EFD548350A91F /* MonthlyReportView.swift */,
+			);
+			path = Reports;
+			sourceTree = "<group>";
+		};
+		40A9B7E70A8BB7A168CEEC12 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				093AE86F29F17CD9A3BFEA17 /* DataService.swift */,
+				6C97E3C568FAE348D62BD5EF /* LocationService.swift */,
+				6FD38C8A1291C7BCED42CB66 /* CameraService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7C9036D1B37DED13DA6B7129 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AAECDABA86CD57B35C795599 /* HomeView.swift */,
+				1D3F824CA7A8091ED3EC3C9E /* AttendanceHistoryView.swift */,
+				F2B11426EC9DFA90B536277F /* AttendanceDetailView.swift */,
+				44191AD76CC5209F75D2A4CD /* CameraView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A34CDFBFEA951D01AD9438A6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28EBB25B9AA8CC2F6B73539E /* Auth */,
+				7C9036D1B37DED13DA6B7129 /* Main */,
+				32A126088FBB1AB7A3BE4543 /* Reports */,
+				D459F4720AC1BD8253201DB6 /* Profile */,
+				DBCDFDE60AF6B3F78B27F8E5 /* MainTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C1708942CF4E29CFFE19D29B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A26410FAC473438C1421769F /* User.swift */,
+				ABC1260DB2AE5374BAC08827 /* Attendance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D459F4720AC1BD8253201DB6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				45A83E7937FD54876D9F4F1D /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04E39A732FF875BA00962D8E /* ricapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E39A982FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricapp" */;
+			buildPhases = (
+				04E39A702FF875BA00962D8E /* Sources */,
+				04E39A712FF875BA00962D8E /* Frameworks */,
+				04E39A722FF875BA00962D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ricapp;
+			productName = ricapp;
+			productReference = 04E39A742FF875BA00962D8E /* ricapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04E39A832FF875BD00962D8E /* ricappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E39A9B2FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricappTests" */;
+			buildPhases = (
+				04E39A802FF875BD00962D8E /* Sources */,
+				04E39A812FF875BD00962D8E /* Frameworks */,
+				04E39A822FF875BD00962D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E39A862FF875BD00962D8E /* PBXTargetDependency */,
+			);
+			name = ricappTests;
+			productName = ricappTests;
+			productReference = 04E39A842FF875BD00962D8E /* ricappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04E39A8D2FF875BD00962D8E /* ricappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E39A9E2FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricappUITests" */;
+			buildPhases = (
+				04E39A8A2FF875BD00962D8E /* Sources */,
+				04E39A8B2FF875BD00962D8E /* Frameworks */,
+				04E39A8C2FF875BD00962D8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04E39A902FF875BD00962D8E /* PBXTargetDependency */,
+			);
+			name = ricappUITests;
+			productName = ricappUITests;
+			productReference = 04E39A8E2FF875BD00962D8E /* ricappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04E39A6C2FF875B900962D8E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					04E39A732FF875BA00962D8E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					04E39A832FF875BD00962D8E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 04E39A732FF875BA00962D8E;
+					};
+					04E39A8D2FF875BD00962D8E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 04E39A732FF875BA00962D8E;
+					};
+				};
+			};
+			buildConfigurationList = 04E39A6F2FF875B900962D8E /* Build configuration list for PBXProject "ricapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04E39A6B2FF875B900962D8E;
+			productRefGroup = 04E39A752FF875BA00962D8E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04E39A732FF875BA00962D8E /* ricapp */,
+				04E39A832FF875BD00962D8E /* ricappTests */,
+				04E39A8D2FF875BD00962D8E /* ricappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04E39A722FF875BA00962D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E39A7F2FF875BC00962D8E /* Preview Assets.xcassets in Resources */,
+				04E39A7C2FF875BC00962D8E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A822FF875BD00962D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A8C2FF875BD00962D8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04E39A702FF875BA00962D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E39A7A2FF875BA00962D8E /* ContentView.swift in Sources */,
+				04E39A782FF875BA00962D8E /* ricappApp.swift in Sources */,
+				6F361B33DF675254FA21526B /* User.swift in Sources */,
+				81EE2963456B23164AE57985 /* Attendance.swift in Sources */,
+				F26AE568EF6036457F08B6B1 /* DataService.swift in Sources */,
+				31216979EE267A69A6B43CC6 /* LocationService.swift in Sources */,
+				1875E57BBBC4A9D607A13F1B /* CameraService.swift in Sources */,
+				1F763EA8A56935CA5740CC5E /* RegistrationView.swift in Sources */,
+				157C3492B94B2860B2A9D236 /* LoginView.swift in Sources */,
+				CA0B01372CBCF98F7CD6B2E1 /* HomeView.swift in Sources */,
+				891FA3FF709A3E9198BBECA7 /* AttendanceHistoryView.swift in Sources */,
+				2DE1DD95F62AE0A4634E743D /* AttendanceDetailView.swift in Sources */,
+				C4029FDF141E4C0A3D3DDE5F /* CameraView.swift in Sources */,
+				32CB1868EAA4E5B1EEA21950 /* MonthlyReportView.swift in Sources */,
+				DC5D83C89F8203354C3B0B4F /* ProfileView.swift in Sources */,
+				9D46DA3C0D7D740E202139AA /* MainTabView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A802FF875BD00962D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E39A892FF875BD00962D8E /* ricappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E39A8A2FF875BD00962D8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E39A932FF875BD00962D8E /* ricappUITests.swift in Sources */,
+				04E39A952FF875BD00962D8E /* ricappUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04E39A862FF875BD00962D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E39A732FF875BA00962D8E /* ricapp */;
+			targetProxy = 04E39A852FF875BD00962D8E /* PBXContainerItemProxy */;
+		};
+		04E39A902FF875BD00962D8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04E39A732FF875BA00962D8E /* ricapp */;
+			targetProxy = 04E39A8F2FF875BD00962D8E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04E39A962FF875BD00962D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04E39A972FF875BD00962D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04E39A992FF875BD00962D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ricapp/Preview Content\"";
+				DEVELOPMENT_TEAM = KC33LWZCH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikasi ini menggunakan kamera untuk mengambil foto selfie saat check-in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikasi ini memerlukan lokasi untuk mencatat posisi Anda saat check-in.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E39A9A2FF875BD00962D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ricapp/Preview Content\"";
+				DEVELOPMENT_TEAM = KC33LWZCH4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikasi ini menggunakan kamera untuk mengambil foto selfie saat check-in.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Aplikasi ini memerlukan lokasi untuk mencatat posisi Anda saat check-in.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04E39A9C2FF875BD00962D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ricapp";
+			};
+			name = Debug;
+		};
+		04E39A9D2FF875BD00962D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ricapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ricapp";
+			};
+			name = Release;
+		};
+		04E39A9F2FF875BD00962D8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ricapp;
+			};
+			name = Debug;
+		};
+		04E39AA02FF875BD00962D8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.risapp.mobile.ricappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ricapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04E39A6F2FF875B900962D8E /* Build configuration list for PBXProject "ricapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E39A962FF875BD00962D8E /* Debug */,
+				04E39A972FF875BD00962D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E39A982FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E39A992FF875BD00962D8E /* Debug */,
+				04E39A9A2FF875BD00962D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E39A9B2FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E39A9C2FF875BD00962D8E /* Debug */,
+				04E39A9D2FF875BD00962D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E39A9E2FF875BD00962D8E /* Build configuration list for PBXNativeTarget "ricappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E39A9F2FF875BD00962D8E /* Debug */,
+				04E39AA02FF875BD00962D8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04E39A6C2FF875B900962D8E /* Project object */;
+}

@@ -1,0 +1,6 @@
+[info] Creating data directory: "/Users/mac/ric_project/ricapp/out/protected/debug-data"
+[info] Using random seed: 1139543775
+[info] Guardsquare iXGuard 4.16.18 stable (e6a4b477222b)
+[info] 2026-9-9 16:40 Copyright © Guardsquare 2026
+[error] Unsupported Xcode version selected: 'Xcode 15.2'.
+Warning: selected Xcode version unknown (15.2) iXGuard might not support it (yet). 

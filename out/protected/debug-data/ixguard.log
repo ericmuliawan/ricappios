@@ -1,0 +1,11 @@
+[info] Creating data directory: "/Users/mac/ric_project/ricapp/out/protected/debug-data"
+[info] Using random seed: 1139543775
+[info] Guardsquare iXGuard 4.16.18 stable (e6a4b477222b)
+[info] 2026-9-9 16:40 Copyright © Guardsquare 2026
+[debug] Logging level set to info for console, trace for log file
+[debug] Release build 0B5B5A7BE0523B2385BDB8461D058C9E
+[debug] Command line: "/Users/mac/.guardsquare/bin/iXGuard/4.16.18/bin/ixguard_SWIFT63" "--debug-data" "out/protected/debug-data" "/Users/mac/Library/Developer/Xcode/Archives/2026-09-09/ricapp 09-09-26 16.24.xcarchive" "-o" "out/protected/protected.xcarchive" "--profiling-id" "b4c49812-b91b-40e9-9e79-f757fa5354fc" "--config" "out/protected/debug-data/protection-execution-config.yaml"
+[debug] Reading license: '/Users/mac/.config/guardsquare/licenses/iXGuard/a088fb36-0e35-4b12-acb3-da92cd357cea/ixguard-license.txt'
+[error] Unsupported Xcode version selected: 'Xcode 15.2'.
+[debug] [TemporaryDir] Removing temporary directory: /var/folders/px/htvyr4053x947lps0012lgtm0000gn/T/94602-ixguard-protected-Ip5hir
+[debug] Removed temp directory: /var/folders/px/htvyr4053x947lps0012lgtm0000gn/T/94602-ixguard-protected-Ip5hir

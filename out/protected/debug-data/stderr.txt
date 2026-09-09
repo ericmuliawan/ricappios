@@ -1,0 +1,5 @@
+Fatal runtime error occurred : Unsupported Xcode version selected: 'Xcode 15.2'.
+
+Invoking reporter
+Protection report available at /Users/mac/ric_project/ricapp/out/protected/debug-data/protectionreport.html
+cmd exec error: exit status 1

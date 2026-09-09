@@ -1,0 +1,15 @@
+{
+	"buildReport": {
+		"build_info": {
+			"input_type": "UNSPECIFIED_INPUT_TYPE",
+			"product": "UNSPECIFIED_PRODUCT",
+			"os": "UNSPECIFIED_OS",
+			"result": "ERROR",
+			"result_error": "Fatal runtime error occurred : Unsupported Xcode version selected: 'Xcode 15.2'.",
+			"processing_time_ms": 1000,
+			"auto_config": "UNSPECIFIED_ENABLED_VALUE",
+			"buildInputIdentifier": "8736f45d-d89b-314f-8d07-3954d69c92f9"
+		}
+	},
+	"periodicUpdates": null
+}
