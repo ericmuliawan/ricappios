@@ -1,2 +1,42 @@
+# Disable instrumentation
+debug:
+  # Don't forget to switch automatic configuration off
+  autoconfigure: false
+  instrumentation:
+    enabled: false
+
+pgo:                                             
+  enabled: true
+  # Your performance data goes here
+  profiling-data: path/to/profilingdata.json
+
 protection:
   enabled: true
+
+  # Your stability data goes here
+  names:
+    enabled: true
+
+    # Paste or merge the stability configuration values
+    structured-denylist:                                   
+      interfaces:                                          
+        - name: "foo1"
+        - name: "bar2"
+
+  code-integrity:
+    enabled: true
+
+    objc-calls:
+      enabled: true
+      # Paste or merge the stability configuration values
+      denylist:                                            
+        - "baz1"
+
+  environment-integrity:
+    enabled: true
+    jailbreak:
+      enabled: true
+    debugger:
+      enabled: true
+    app-integrity:
+      enabled: true
