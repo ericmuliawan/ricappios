@@ -1,14 +1,11 @@
 import SwiftUI
-import SwiftData
 
 struct LoginView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var store: Store
     
     @State private var employeeId = ""
     @State private var showError = false
     @State private var errorMessage = ""
-    @State private var isAuthenticated = false
     
     var body: some View {
         NavigationStack {
@@ -69,9 +66,6 @@ struct LoginView: View {
             } message: {
                 Text(errorMessage)
             }
-            .fullScreenCover(isPresented: $isAuthenticated) {
-                MainTabView()
-            }
         }
     }
     
@@ -82,11 +76,8 @@ struct LoginView: View {
             return
         }
         
-        let user = DataService.shared.getUser(byEmployeeId: employeeId, in: modelContext)
-        
-        if let user = user {
-            UserDefaults.standard.set(user.employeeId, forKey: "currentEmployeeId")
-            isAuthenticated = true
+        if store.getUser(byEmployeeId: employeeId) != nil {
+            store.setCurrentEmployeeId(employeeId)
         } else {
             errorMessage = "ID Karyawan tidak ditemukan"
             showError = true
@@ -96,5 +87,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
-        .modelContainer(for: User.self, inMemory: true)
+        .environmentObject(Store())
 }

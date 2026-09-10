@@ -1,61 +1,81 @@
 import Foundation
-import SwiftData
+import SwiftUI
 
-class DataService {
-    static let shared = DataService()
+@MainActor
+final class Store: ObservableObject {
+    @Published private(set) var currentEmployeeId: String?
     
-    private init() {}
+    @Published private(set) var users: [User] = []
+    @Published private(set) var attendances: [Attendance] = []
     
-    func createUser(name: String, employeeId: String, department: String, position: String, in context: ModelContext) -> User {
-        let user = User(name: name, employeeId: employeeId, department: department, position: position)
-        context.insert(user)
-        saveContext(context)
-        return user
+    private let usersFile: URL
+    private let attendanceFile: URL
+    
+    private static let employeesKey = "currentEmployeeId"
+    
+    init() {
+        let docs = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        usersFile = docs.appendingPathComponent("users.json")
+        attendanceFile = docs.appendingPathComponent("attendances.json")
+        
+        self.users = Self.load([User].self, from: usersFile) ?? []
+        self.attendances = Self.load([Attendance].self, from: attendanceFile) ?? []
+        self.currentEmployeeId = UserDefaults.standard.string(forKey: Self.employeesKey)
     }
     
-    func getUser(byEmployeeId employeeId: String, in context: ModelContext) -> User? {
-        let descriptor = FetchDescriptor<User>(predicate: #Predicate { user in
-            user.employeeId == employeeId
-        })
-        return try? context.fetch(descriptor).first
-    }
+    // MARK: - User
     
-    func getCurrentUser(in context: ModelContext) -> User? {
-        guard let employeeId = UserDefaults.standard.string(forKey: "currentEmployeeId") else {
-            return nil
+    @discardableResult
+    func createUser(name: String, employeeId: String, department: String, position: String) -> Bool {
+        guard !users.contains(where: { $0.employeeId == employeeId }) else {
+            return false
         }
-        return getUser(byEmployeeId: employeeId, in: context)
+        
+        let user = User(name: name, employeeId: employeeId, department: department, position: position)
+        users.append(user)
+        setCurrentEmployeeId(employeeId)
+        persist()
+        return true
     }
     
-    func createAttendance(userId: UUID, in context: ModelContext) -> Attendance {
-        let attendance = Attendance(userId: userId)
-        context.insert(attendance)
-        saveContext(context)
-        return attendance
+    func getUser(byEmployeeId employeeId: String) -> User? {
+        users.first { $0.employeeId == employeeId }
     }
     
-    func getTodayAttendance(userId: UUID, in context: ModelContext) -> Attendance? {
+    func getCurrentUser() -> User? {
+        guard let employeeId = currentEmployeeId else { return nil }
+        return getUser(byEmployeeId: employeeId)
+    }
+    
+    func setCurrentEmployeeId(_ employeeId: String) {
+        currentEmployeeId = employeeId
+        UserDefaults.standard.set(employeeId, forKey: Self.employeesKey)
+    }
+    
+    func logout() {
+        currentEmployeeId = nil
+        UserDefaults.standard.removeObject(forKey: Self.employeesKey)
+    }
+    
+    // MARK: - Attendance
+    
+    func getTodayAttendance(userId: UUID) -> Attendance? {
         let calendar = Calendar.current
         let startOfDay = calendar.startOfDay(for: Date())
         let endOfDay = calendar.date(byAdding: .day, value: 1, to: startOfDay)!
         
-        let descriptor = FetchDescriptor<Attendance>(predicate: #Predicate { attendance in
+        return attendances.first { attendance in
             attendance.userId == userId && attendance.date >= startOfDay && attendance.date < endOfDay
-        })
-        return try? context.fetch(descriptor).first
+        }
     }
     
-    func getAttendanceHistory(userId: UUID, in context: ModelContext) -> [Attendance] {
-        let descriptor = FetchDescriptor<Attendance>(
-            predicate: #Predicate { attendance in
-                attendance.userId == userId
-            },
-            sortBy: [SortDescriptor(\.date, order: .reverse)]
-        )
-        return (try? context.fetch(descriptor)) ?? []
+    func getAttendanceHistory(userId: UUID) -> [Attendance] {
+        attendances
+            .filter { $0.userId == userId }
+            .sorted { $0.date > $1.date }
     }
     
-    func getMonthlyAttendance(userId: UUID, month: Date, in context: ModelContext) -> [Attendance] {
+    func getMonthlyAttendance(userId: UUID, month: Date) -> [Attendance] {
         let calendar = Calendar.current
         let components = calendar.dateComponents([.year, .month], from: month)
         guard let startOfMonth = calendar.date(from: components),
@@ -63,17 +83,82 @@ class DataService {
             return []
         }
         
-        let descriptor = FetchDescriptor<Attendance>(predicate: #Predicate { attendance in
+        return attendances.filter { attendance in
             attendance.userId == userId && attendance.date >= startOfMonth && attendance.date < endOfMonth
-        })
-        return (try? context.fetch(descriptor)) ?? []
+        }
     }
     
-    private func saveContext(_ context: ModelContext) {
+    func createAttendance(userId: UUID) -> Attendance {
+        let attendance = Attendance(userId: userId)
+        attendances.append(attendance)
+        persist()
+        return attendance
+    }
+    
+    func upsertAttendance(_ attendance: Attendance) {
+        if let index = attendances.firstIndex(where: { $0.id == attendance.id }) {
+            attendances[index] = attendance
+        } else {
+            attendances.append(attendance)
+        }
+        persist()
+    }
+    
+    @discardableResult
+    func performCheckIn(userId: UUID, photoData: Data?, latitude: Double, longitude: Double, locationName: String) -> Attendance? {
+        var attendance: Attendance
+        if let existing = getTodayAttendance(userId: userId) {
+            attendance = existing
+        } else {
+            attendance = Attendance(userId: userId)
+        }
+        
+        attendance.checkInTime = Date()
+        attendance.photoData = photoData
+        attendance.latitude = latitude
+        attendance.longitude = longitude
+        attendance.locationName = locationName
+        attendance.status = .checkedIn
+        upsertAttendance(attendance)
+        return attendance
+    }
+    
+    @discardableResult
+    func performCheckOut(userId: UUID) -> Attendance? {
+        guard var attendance = getTodayAttendance(userId: userId) else { return nil }
+        attendance.checkOutTime = Date()
+        attendance.status = .checkedOut
+        upsertAttendance(attendance)
+        return attendance
+    }
+    
+    // MARK: - Persistence
+    
+    private func persist() {
+        Self.save(users, to: usersFile)
+        Self.save(attendances, to: attendanceFile)
+    }
+    
+    private static func save<T: Encodable>(_ value: T, to url: URL) {
         do {
-            try context.save()
+            let encoder = JSONEncoder()
+            encoder.dateEncodingStrategy = .iso8601
+            let data = try encoder.encode(value)
+            try data.write(to: url, options: .atomic)
         } catch {
-            print("Error saving context: \(error)")
+            print("Error saving to \(url.lastPathComponent): \(error)")
+        }
+    }
+    
+    private static func load<T: Decodable>(_ type: T.Type, from url: URL) -> T? {
+        guard let data = try? Data(contentsOf: url) else { return nil }
+        do {
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = .iso8601
+            return try decoder.decode(T.self, from: data)
+        } catch {
+            print("Error loading \(url.lastPathComponent): \(error)")
+            return nil
         }
     }
 }

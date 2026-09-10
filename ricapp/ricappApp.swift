@@ -1,12 +1,13 @@
 import SwiftUI
-import SwiftData
 
 @main
 struct ricappApp: App {
+    @StateObject private var store = Store()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(store)
         }
-        .modelContainer(for: [User.self, Attendance.self])
     }
 }

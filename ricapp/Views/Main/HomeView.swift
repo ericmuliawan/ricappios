@@ -1,8 +1,7 @@
 import SwiftUI
-import SwiftData
 
 struct HomeView: View {
-    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject var store: Store
     @StateObject private var locationService = LocationService()
     @StateObject private var cameraService = CameraService()
     
@@ -241,10 +240,10 @@ struct HomeView: View {
     }
     
     private func loadData() {
-        currentUser = DataService.shared.getCurrentUser(in: modelContext)
+        currentUser = store.getCurrentUser()
         
         if let user = currentUser {
-            todayAttendance = DataService.shared.getTodayAttendance(userId: user.id, in: modelContext)
+            todayAttendance = store.getTodayAttendance(userId: user.id)
             
             if let attendance = todayAttendance {
                 isCheckedIn = attendance.checkInTime != nil && attendance.checkOutTime == nil
@@ -260,39 +259,29 @@ struct HomeView: View {
             return
         }
         
-        var attendance: Attendance
-        if let existing = todayAttendance {
-            attendance = existing
-        } else {
-            attendance = DataService.shared.createAttendance(userId: user.id, in: modelContext)
-        }
+        store.performCheckIn(
+            userId: user.id,
+            photoData: photoData,
+            latitude: locationService.location?.coordinate.latitude ?? 0,
+            longitude: locationService.location?.coordinate.longitude ?? 0,
+            locationName: locationService.locationName
+        )
         
-        attendance.checkInTime = Date()
-        attendance.photoData = photoData
-        attendance.latitude = locationService.location?.coordinate.latitude ?? 0
-        attendance.longitude = locationService.location?.coordinate.longitude ?? 0
-        attendance.locationName = locationService.locationName
-        attendance.status = .checkedIn
-        
-        try? modelContext.save()
-        
-        todayAttendance = attendance
+        todayAttendance = store.getTodayAttendance(userId: user.id)
         isCheckedIn = true
     }
     
     private func handleCheckOut() {
-        guard let attendance = todayAttendance else { return }
+        guard let user = currentUser else { return }
         
-        attendance.checkOutTime = Date()
-        attendance.status = .checkedOut
+        store.performCheckOut(userId: user.id)
         
-        try? modelContext.save()
-        
+        todayAttendance = store.getTodayAttendance(userId: user.id)
         isCheckedIn = false
     }
 }
 
 #Preview {
     HomeView()
-        .modelContainer(for: [User.self, Attendance.self], inMemory: true)
+        .environmentObject(Store())
 }

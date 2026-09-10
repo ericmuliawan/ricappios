@@ -1,8 +1,7 @@
 import SwiftUI
-import SwiftData
 
 struct MonthlyReportView: View {
-    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject var store: Store
     @State private var currentUser: User?
     @State private var selectedMonth = Date()
     @State private var monthlyAttendance: [Attendance] = []
@@ -23,7 +22,7 @@ struct MonthlyReportView: View {
             .onAppear {
                 loadData()
             }
-            .onChange(of: selectedMonth) { _, _ in
+            .onChange(of: selectedMonth) { _ in
                 loadData()
             }
         }
@@ -214,11 +213,11 @@ struct MonthlyReportView: View {
     }
     
     private func loadData() {
-        currentUser = DataService.shared.getCurrentUser(in: modelContext)
+        currentUser = store.getCurrentUser()
         
         guard let user = currentUser else { return }
         
-        monthlyAttendance = DataService.shared.getMonthlyAttendance(userId: user.id, month: selectedMonth, in: modelContext)
+        monthlyAttendance = store.getMonthlyAttendance(userId: user.id, month: selectedMonth)
     }
 }
 
@@ -251,5 +250,5 @@ struct SummaryCard: View {
 
 #Preview {
     MonthlyReportView()
-        .modelContainer(for: [User.self, Attendance.self], inMemory: true)
+        .environmentObject(Store())
 }

@@ -1,8 +1,7 @@
 import SwiftUI
-import SwiftData
 
 struct AttendanceHistoryView: View {
-    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject var store: Store
     @State private var currentUser: User?
     @State private var attendanceHistory: [Attendance] = []
     @State private var selectedFilter: AttendanceFilter = .all
@@ -28,7 +27,7 @@ struct AttendanceHistoryView: View {
             .onAppear {
                 loadData()
             }
-            .onChange(of: selectedFilter) { _, _ in
+            .onChange(of: selectedFilter) { _ in
                 loadData()
             }
         }
@@ -90,11 +89,11 @@ struct AttendanceHistoryView: View {
     }
     
     private func loadData() {
-        currentUser = DataService.shared.getCurrentUser(in: modelContext)
+        currentUser = store.getCurrentUser()
         
         guard let user = currentUser else { return }
         
-        let allHistory = DataService.shared.getAttendanceHistory(userId: user.id, in: modelContext)
+        let allHistory = store.getAttendanceHistory(userId: user.id)
         
         let calendar = Calendar.current
         let now = Date()
@@ -169,5 +168,5 @@ struct AttendanceRowView: View {
 
 #Preview {
     AttendanceHistoryView()
-        .modelContainer(for: [User.self, Attendance.self], inMemory: true)
+        .environmentObject(Store())
 }

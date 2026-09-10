@@ -1,9 +1,6 @@
 import Foundation
-import SwiftData
-import CoreLocation
 
-@Model
-final class Attendance {
+struct Attendance: Identifiable, Codable, Hashable {
     var id: UUID
     var userId: UUID
     var checkInTime: Date?

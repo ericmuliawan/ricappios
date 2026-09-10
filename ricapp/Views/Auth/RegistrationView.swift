@@ -1,8 +1,7 @@
 import SwiftUI
-import SwiftData
 
 struct RegistrationView: View {
-    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject var store: Store
     @Environment(\.dismiss) private var dismiss
     
     @State private var name = ""
@@ -75,22 +74,19 @@ struct RegistrationView: View {
             return
         }
         
-        let existingUser = DataService.shared.getUser(byEmployeeId: employeeId, in: modelContext)
-        if existingUser != nil {
+        if store.getUser(byEmployeeId: employeeId) != nil {
             errorMessage = "ID Karyawan sudah terdaftar"
             showError = true
             return
         }
         
-        _ = DataService.shared.createUser(
+        store.createUser(
             name: name,
             employeeId: employeeId,
             department: department,
-            position: position,
-            in: modelContext
+            position: position
         )
         
-        UserDefaults.standard.set(employeeId, forKey: "currentEmployeeId")
         dismiss()
     }
 }
@@ -123,5 +119,5 @@ struct CustomTextField: View {
 
 #Preview {
     RegistrationView()
-        .modelContainer(for: User.self, inMemory: true)
+        .environmentObject(Store())
 }

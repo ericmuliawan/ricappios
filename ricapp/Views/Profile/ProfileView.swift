@@ -1,11 +1,9 @@
 import SwiftUI
-import SwiftData
 
 struct ProfileView: View {
-    @Environment(\.modelContext) private var modelContext
+    @EnvironmentObject var store: Store
     @State private var currentUser: User?
     @State private var showLogoutConfirm = false
-    @State private var showMainView = false
     
     var body: some View {
         NavigationStack {
@@ -29,9 +27,6 @@ struct ProfileView: View {
                 }
             } message: {
                 Text("Anda yakin ingin keluar dari app?")
-            }
-            .fullScreenCover(isPresented: $showMainView) {
-                ContentView()
             }
         }
     }
@@ -105,16 +100,15 @@ struct ProfileView: View {
     }
     
     private func loadData() {
-        currentUser = DataService.shared.getCurrentUser(in: modelContext)
+        currentUser = store.getCurrentUser()
     }
     
     private func logout() {
-        UserDefaults.standard.removeObject(forKey: "currentEmployeeId")
-        showMainView = true
+        store.logout()
     }
 }
 
 #Preview {
     ProfileView()
-        .modelContainer(for: User.self, inMemory: true)
+        .environmentObject(Store())
 }

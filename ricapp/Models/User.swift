@@ -1,8 +1,6 @@
 import Foundation
-import SwiftData
 
-@Model
-final class User {
+struct User: Identifiable, Codable, Hashable {
     var id: UUID
     var name: String
     var employeeId: String

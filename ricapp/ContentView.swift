@@ -1,21 +1,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var store: Store
+    
     var body: some View {
         Group {
-            if isLoggedIn {
+            if store.currentEmployeeId != nil {
                 MainTabView()
             } else {
                 LoginView()
             }
         }
     }
-    
-    private var isLoggedIn: Bool {
-        UserDefaults.standard.string(forKey: "currentEmployeeId") != nil
-    }
 }
 
 #Preview {
     ContentView()
+        .environmentObject(Store())
 }
