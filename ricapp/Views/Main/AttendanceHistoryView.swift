@@ -14,7 +14,7 @@ struct AttendanceHistoryView: View {
     }
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if attendanceHistory.isEmpty {
                     emptyStateView

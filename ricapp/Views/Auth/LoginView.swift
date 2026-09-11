@@ -8,7 +8,7 @@ struct LoginView: View {
     @State private var errorMessage = ""
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack(spacing: 24) {
                 Spacer()
                 

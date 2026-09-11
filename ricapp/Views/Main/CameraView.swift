@@ -12,7 +12,7 @@ struct CameraView: View {
     @State private var capturedImage: UIImage?
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ZStack {
                 Color.black.ignoresSafeArea()
                 
@@ -42,7 +42,7 @@ struct CameraView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Ambil Foto Selfie")
                         .foregroundStyle(.white)
-                        .fontWeight(.semibold)
+                        .font(.headline.weight(.semibold))
                 }
                 
                 ToolbarItem(placement: .confirmationAction) {

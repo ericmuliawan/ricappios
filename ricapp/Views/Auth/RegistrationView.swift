@@ -12,7 +12,7 @@ struct RegistrationView: View {
     @State private var errorMessage = ""
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             ScrollView {
                 VStack(spacing: 24) {
                     VStack(spacing: 8) {

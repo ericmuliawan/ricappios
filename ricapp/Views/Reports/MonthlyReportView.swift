@@ -9,7 +9,7 @@ struct MonthlyReportView: View {
     private let calendar = Calendar.current
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if monthlyAttendance.isEmpty {
                     emptyStateView

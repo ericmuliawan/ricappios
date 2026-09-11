@@ -128,7 +128,7 @@ struct AttendanceDetailView: View {
 }
 
 #Preview {
-    NavigationStack {
+    NavigationView {
         AttendanceDetailView(attendance: Attendance(userId: UUID()))
     }
 }

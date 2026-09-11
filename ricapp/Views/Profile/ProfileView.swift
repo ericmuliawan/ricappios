@@ -6,7 +6,7 @@ struct ProfileView: View {
     @State private var showLogoutConfirm = false
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             Group {
                 if let user = currentUser {
                     profileContent(user: user)

@@ -16,15 +16,20 @@ let callbackMessage = "Your device is compromised";
 let callbackButton = "Continue";
 
 func presentAlert() {
-    guard UIApplication.shared.windows.count != 0,
-          let _ = UIApplication.shared.windows.first?.rootViewController else {
+    let window = UIApplication.shared.connectedScenes
+        .compactMap { $0 as? UIWindowScene }
+        .first?
+        .windows
+        .first
+    guard let window = window,
+          let _ = window.rootViewController else {
         DispatchQueue.main.async {
             presentAlert()
         }
         return
     }
 
-    var currentController = UIApplication.shared.windows.first!.rootViewController!
+    var currentController = window.rootViewController!
     while let presentedController = currentController.presentedViewController {
         currentController = presentedController
     }
