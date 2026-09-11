@@ -1,0 +1,117 @@
+2026-09-10 04:14:06 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0xa608aad00; archive(resolved)="<IDEArchive: 0xa610b5f10>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	Chain (16, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0xa608aad00; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0xa608ab600; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa2351e580; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b349180; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b349400; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b349680; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b349e00; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b349900; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b34a080; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0xa4bce3000; teamID='F926M23CY4', teamName='Fadhil Aulia Hardani', teamType='Individual', username='technical@rml.co.id', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0xa1b34a300; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="(null)">
+	<IDEDistributionContext: 0xa1b34a580; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="(null)">
+	<IDEDistributionContext: 0xa1b34a800; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="(null)">
+	<IDEDistributionContext: 0xa1b34b980; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="<IDEDistributionMethodiOSAdHoc: 0xa497ba3e0>", team="(null)">
+	<IDEDistributionContext: 0xa1b34b700; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0xa2b240280; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0xa2b240c80; archive = "<IDEArchive: 0xa610b5f10>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0xa608aad00>
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionCreateDestRootStep
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionCopyItemStep
+2026-09-10 04:14:06 +0000  Running /usr/bin/ditto '-V' '/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app' '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root/Payload/ricapp.app'
+2026-09-10 04:14:06 +0000  >>> Copying /Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app 
+2026-09-10 04:14:06 +0000  copying file ./_CodeSignature/CodeResources ... 
+2026-09-10 04:14:06 +0000  2111 bytes for ./_CodeSignature/CodeResources
+2026-09-10 04:14:06 +0000  copying file ./ricapp ... 
+2026-09-10 04:14:06 +0000  1232080 bytes for ./ricapp
+2026-09-10 04:14:06 +0000  copying file ./embedded.mobileprovision ... 
+2026-09-10 04:14:06 +0000  28803 bytes for ./embedded.mobileprovision
+2026-09-10 04:14:06 +0000  copying file ./Info.plist ... 
+2026-09-10 04:14:06 +0000  1479 bytes for ./Info.plist
+2026-09-10 04:14:06 +0000  copying file ./PkgInfo ... 
+2026-09-10 04:14:06 +0000  8 bytes for ./PkgInfo
+2026-09-10 04:14:06 +0000  /usr/bin/ditto exited with 0
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionEmbedProfileStep
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionInfoPlistStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionSymbolsStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionAppThinningStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionArchThinningStep
+2026-09-10 04:14:06 +0000  Archs to thin for item /Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app are []
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionODRStep
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionStripXattrsStep
+2026-09-10 04:14:06 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionCodesignStep
+2026-09-10 04:14:06 +0000  Entitlements for <IDEDistributionItem: 0xa224d3ea0; bundleID='com.rmldemo.guardsquare', path='<DVTFilePath:0xa235a5680:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xa224d2700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xa23a1cd80; name='Apple Development: Fadhil Aulia Hardani (8CVX736XL8)', hash='D45932A81E8B6148CFAFBD65CA4C97B366750F22', serialNumber='7617BB8523E9B8099EE9F1C6BF6B0BA2', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-06-29 09:39:27 +0000''>', entitlements='{
+    "application-identifier" = "F926M23CY4.com.rmldemo.guardsquare";
+    "com.apple.developer.team-identifier" = F926M23CY4;
+    "get-task-allow" = 1;
+}', teamID='F926M23CY4', identifier='com.rmldemo.guardsquare', executablePath='<DVTFilePath:0xa235a4720:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app/ricapp'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "F926M23CY4.com.rmldemo.guardsquare";
+    "com.apple.developer.team-identifier" = F926M23CY4;
+    "get-task-allow" = 0;
+}
+2026-09-10 04:14:06 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2026-09-10 04:14:06 +0000  Entitlements for <IDEDistributionItem: 0xa224d3ea0; bundleID='com.rmldemo.guardsquare', path='<DVTFilePath:0xa235a5680:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xa224d2700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xa23a1c9c0; name='Apple Development: Fadhil Aulia Hardani (8CVX736XL8)', hash='D45932A81E8B6148CFAFBD65CA4C97B366750F22', serialNumber='7617BB8523E9B8099EE9F1C6BF6B0BA2', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-06-29 09:39:27 +0000''>', entitlements='{
+    "application-identifier" = "F926M23CY4.com.rmldemo.guardsquare";
+    "com.apple.developer.team-identifier" = F926M23CY4;
+    "get-task-allow" = 1;
+}', teamID='F926M23CY4', identifier='com.rmldemo.guardsquare', executablePath='<DVTFilePath:0xa235a4720:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app/ricapp'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "F926M23CY4.com.rmldemo.guardsquare";
+    "com.apple.developer.team-identifier" = F926M23CY4;
+    "get-task-allow" = 0;
+}
+2026-09-10 04:14:06 +0000  Writing entitlements for <IDEDistributionItem: 0xa224d3ea0; bundleID='com.rmldemo.guardsquare', path='<DVTFilePath:0xa235a5680:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0xa224d2700; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0xa23a1c9c0; name='Apple Development: Fadhil Aulia Hardani (8CVX736XL8)', hash='D45932A81E8B6148CFAFBD65CA4C97B366750F22', serialNumber='7617BB8523E9B8099EE9F1C6BF6B0BA2', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2026-06-29 09:39:27 +0000''>', entitlements='{
+    "application-identifier" = "F926M23CY4.com.rmldemo.guardsquare";
+    "com.apple.developer.team-identifier" = F926M23CY4;
+    "get-task-allow" = 1;
+}', teamID='F926M23CY4', identifier='com.rmldemo.guardsquare', executablePath='<DVTFilePath:0xa235a4720:'/Users/technicalrml/Library/Developer/Xcode/Archives/2026-09-10/ricapp 10-09-26, 11.13.xcarchive/Products/Applications/ricapp.app/ricapp'>', hardenedRuntime='0'>'> to: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/entitlements~~~jbeXSt
+2026-09-10 04:14:06 +0000  invoking codesign: <NSConcreteTask: 0xa60fa7d40; launchPath='/usr/bin/codesign', arguments='(
+    "-f",
+    "-s",
+    DBB43A70EF14B0EC6C7A1636E8EB9544AD937EB5,
+    "--entitlements",
+    "/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/entitlements~~~jbeXSt",
+    "--preserve-metadata=identifier,flags,runtime,launch-constraints,library-constraints",
+    "--generate-entitlement-der",
+    "--strip-disallowed-xattrs",
+    "-vvv",
+    "/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root/Payload/ricapp.app"
+)'>
+2026-09-10 04:14:06 +0000  codesign output: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root/Payload/ricapp.app: replacing existing signature
+/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root/Payload/ricapp.app: signed app bundle with Mach-O thin (arm64) [com.rmldemo.guardsquare]
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionZipODRItemStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionCreateIPAStep
+2026-09-10 04:14:06 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root' '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Packages/ricapp.ipa'
+2026-09-10 04:14:06 +0000  >>> Copying /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root 
+2026-09-10 04:14:06 +0000  copying file ./Payload/ricapp.app/_CodeSignature/CodeResources ... 
+2026-09-10 04:14:06 +0000  2111 bytes for ./Payload/ricapp.app/_CodeSignature/CodeResources
+2026-09-10 04:14:06 +0000  copying file ./Payload/ricapp.app/ricapp ... 
+2026-09-10 04:14:06 +0000  1232080 bytes for ./Payload/ricapp.app/ricapp
+2026-09-10 04:14:06 +0000  copying file ./Payload/ricapp.app/embedded.mobileprovision ... 
+2026-09-10 04:14:06 +0000  18478 bytes for ./Payload/ricapp.app/embedded.mobileprovision
+2026-09-10 04:14:06 +0000  copying file ./Payload/ricapp.app/Info.plist ... 
+2026-09-10 04:14:06 +0000  1479 bytes for ./Payload/ricapp.app/Info.plist
+2026-09-10 04:14:06 +0000  copying file ./Payload/ricapp.app/PkgInfo ... 
+2026-09-10 04:14:06 +0000  8 bytes for ./Payload/ricapp.app/PkgInfo
+2026-09-10 04:14:06 +0000  /usr/bin/ditto exited with 0
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2026-09-10 04:14:06 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2026-09-10 04:14:06 +0000  IDEDistributionItem init <DVTFilePath:0xa224d04e0:'/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/XcodeDistPipeline.~~~YCEF79/Root/Payload/ricapp.app'>
+2026-09-10 04:14:06 +0000  Processing step: IDEDistributionCreateManifestStep

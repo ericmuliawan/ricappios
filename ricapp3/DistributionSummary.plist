@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ricapp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>DBB43A70EF14B0EC6C7A1636E8EB9544AD937EB5</string>
+				<key>dateExpires</key>
+				<string>06/08/27</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>F926M23CY4.com.rmldemo.guardsquare</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>F926M23CY4</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>ricapp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>e49befe9-6ac7-499d-b534-33473818a663</string>
+				<key>dateExpires</key>
+				<string>06/08/27</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.rmldemo.guardsquare</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>F926M23CY4</string>
+				<key>name</key>
+				<string>Fadhil Aulia Hardani</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

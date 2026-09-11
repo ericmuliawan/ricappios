@@ -1,0 +1,513 @@
+[info] Using random seed: 423486298
+[info] Guardsquare iXGuard 4.16.18 stable (e6a4b477222b)
+[info] 2026-9-11 11:24 Copyright © Guardsquare 2026
+[debug] Logging level set to info for console, trace for log file
+[debug] Release build B04F771876993953A67D2458BF36D5E7
+[debug] Command line: "/Library/iXGuard/bin/ixguard_SWIFT62" "-c=ig-config.yml" "-o=protected-2.ipa" "ricapp.ipa"
+[debug] Reading license: '/Users/technicalrml/.config/guardsquare/licenses/iXGuard/a088fb36-0e35-4b12-acb3-da92cd357cea/ixguard-license.txt'
+[info] Using Xcode 26.3
+[info] Reading '/Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/ricapp.ipa'
+[info] IPA Driver
+[info] Reading input...
+[debug] Command: ditto -x -k --noqtn --noacl /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/ricapp.ipa /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Reading dSYMs failed for input archive. Did not find a dSYM file at '/private/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp.dSYM'
+  No user provided dSYM paths found.
+  dSYMs not found for '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp'. You can add dSYM paths to the 'build.dsym-paths' flag.
+[debug] Command: /usr/libexec/PlistBuddy -c Print CFBundleExecutable /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/Info.plist
+[debug] Command: /usr/libexec/PlistBuddy -c Print MinimumOSVersion /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/Info.plist
+[debug] Command: xcrun codesign --display --extract-certificates=/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificates/ricapp/machocert /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -fingerprint -sha1 -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificates/ricapp/machocert0
+[debug] Command: xcrun codesign -d --entitlements /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app --xml
+[debug] Command: xcrun codesign --display --extract-certificates=/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificates/ricapp/machocert /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -fingerprint -sha1 -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificates/ricapp/machocert0
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app
+[debug] Command: /usr/libexec/PlistBuddy -c Print :application-identifier /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Retrieved signing identity DBB43A70EF14B0EC6C7A1636E8EB9544AD937EB5 from ricapp
+[debug] Command: /usr/bin/security find-certificate -Z -p -a
+[debug] Command: /usr/bin/openssl x509 -noout -inform PEM -subject -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificate.pem
+[debug] Command: /usr/bin/security cms -D -i /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/embedded.mobileprovision
+[debug] Command: /usr/libexec/PlistBuddy -c Print Entitlements:get-task-allow /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/provisioning.plist
+[debug] Command: /usr/bin/security cms -D -i /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/embedded.mobileprovision
+[debug] Command: /usr/libexec/PlistBuddy -c Print :DeveloperCertificates:0 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/provisioning.plist
+[debug] Command: /usr/libexec/PlistBuddy -c Print :DeveloperCertificates:1 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/provisioning.plist
+[debug] Command: /usr/libexec/PlistBuddy -c Print :DeveloperCertificates:2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/provisioning.plist
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -fingerprint -sha1 -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificate.der
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -subject -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificate.der
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -fingerprint -sha1 -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificate.1.der
+[debug] Command: /usr/bin/openssl x509 -noout -inform DER -subject -in /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/certificate.1.der
+[debug] Command: /usr/bin/security find-identity -v -p codesigning
+[debug] Bundle display name not specified in Info.plist
+[info] Verifying configuration file
+[info] Configured app distribution target: App Store
+[info] Restoring Bitcode Symbols
+[debug] Using default denylist for framework with name 'Other'
+[info] Early Materialize Modules
+[info] Loading Prefabs
+[debug] Disabling syscalls in module `predicate_hash.c.o` is not supported
+[debug] Stripped 'classrefs' section from gv
+[info] Materialize Modules
+[info] Verifying configuration file
+[info] Checking Privacy Manifest
+[info] Your privacy manifest declarations have been updated for type NSPrivacyAccessedAPICategoryFileTimestamp and reason C617.1.
+[info] Your privacy manifest declarations have been updated for type NSPrivacyAccessedAPICategoryUserDefaults and reason CA92.1.
+[info] Parsing Strings
+[info] Parsing Objective-C Metadata
+[debug] Loading SDK framework Others.yml
+[debug] Loading SDK framework ObjectiveC.yml
+[debug] Loading SDK framework sys_types.yml
+[debug] Loading SDK framework netinet_in.yml
+[debug] Loading SDK framework Swift.yml
+[debug] Loading SDK framework DarwinFoundation.yml
+[debug] Loading SDK framework ptrcheck.yml
+[debug] Loading SDK framework os_availability.yml
+[debug] Loading SDK framework os_availability_internal.yml
+[debug] Loading SDK framework _stddef.yml
+[debug] Loading SDK framework _Builtin_stddef.yml
+[debug] Loading SDK framework _Builtin_stdarg.yml
+[debug] Loading SDK framework _useconds_t.yml
+[debug] Loading SDK framework _sys_select.yml
+[debug] Loading SDK framework _errno.yml
+[debug] Loading SDK framework _DarwinFoundation1.yml
+[debug] Loading SDK framework _Builtin_float.yml
+[debug] Loading SDK framework _float.yml
+[debug] Loading SDK framework _AvailabilityInternal.yml
+[debug] Loading SDK framework _DarwinFoundation2.yml
+[debug] Loading SDK framework _string.yml
+[debug] Loading SDK framework _strings.yml
+[debug] Loading SDK framework _stdlib.yml
+[debug] Loading SDK framework sys_wait.yml
+[debug] Loading SDK framework sys_resource.yml
+[debug] Loading SDK framework sys_time.yml
+[debug] Loading SDK framework _Builtin_stdint.yml
+[debug] Loading SDK framework _stdint.yml
+[debug] Loading SDK framework _signal.yml
+[debug] Loading SDK framework mach.yml
+[debug] Loading SDK framework _DarwinFoundation3.yml
+[debug] Loading SDK framework runetype.yml
+[debug] Loading SDK framework alloca.yml
+[debug] Loading SDK framework _SwiftConcurrencyShims.yml
+[debug] Loading SDK framework _StringProcessing.yml
+[debug] Loading SDK framework _Concurrency.yml
+[debug] Loading SDK framework _Builtin_stdbool.yml
+[debug] Loading SDK framework _Builtin_limits.yml
+[debug] Loading SDK framework _limits.yml
+[debug] Loading SDK framework TargetConditionals.yml
+[debug] Loading SDK framework Darwin.yml
+[debug] Loading SDK framework xlocale.yml
+[debug] Loading SDK framework _locale.yml
+[debug] Loading SDK framework uuid.yml
+[debug] Loading SDK framework unistd.yml
+[debug] Loading SDK framework sys_select.yml
+[debug] Loading SDK framework _time.yml
+[debug] Loading SDK framework gethostuuid.yml
+[debug] Loading SDK framework _stdio.yml
+[debug] Loading SDK framework pthread.yml
+[debug] Loading SDK framework _mach_port_t.yml
+[debug] Loading SDK framework nl_types.yml
+[debug] Loading SDK framework _wctype.yml
+[debug] Loading SDK framework _ctype.yml
+[debug] Loading SDK framework __wctype.yml
+[debug] Loading SDK framework _wchar.yml
+[debug] Loading SDK framework _setjmp.yml
+[debug] Loading SDK framework _math.yml
+[debug] Loading SDK framework _inttypes.yml
+[debug] Loading SDK framework _fenv.yml
+[debug] Loading SDK framework _complex.yml
+[debug] Loading SDK framework _assert.yml
+[debug] Loading SDK framework _Builtin_tgmath.yml
+[debug] Loading SDK framework _tgmath.yml
+[debug] Loading SDK framework _Builtin_stddef_max_align_t.yml
+[debug] Loading SDK framework _Builtin_stdatomic.yml
+[debug] Loading SDK framework _Builtin_iso646.yml
+[debug] Loading SDK framework _Builtin_inttypes.yml
+[debug] Loading SDK framework SwiftOverlayShims.yml
+[debug] Loading SDK framework SwiftShims.yml
+[debug] Loading SDK framework AvailabilityMacros.yml
+[debug] Loading SDK framework Foundation.yml
+[debug] Loading SDK framework string_h.yml
+[debug] Loading SDK framework ptrauth.yml
+[debug] Loading SDK framework XPC.yml
+[debug] Loading SDK framework os_object.yml
+[debug] Loading SDK framework System.yml
+[debug] Loading SDK framework Dispatch.yml
+[debug] Loading SDK framework os_workgroup.yml
+[debug] Loading SDK framework Combine.yml
+[debug] Loading SDK framework Security.yml
+[debug] Loading SDK framework CoreFoundation.yml
+[debug] Loading SDK framework Observation.yml
+[debug] Loading SDK framework CFNetwork.yml
+[debug] Failed to resolve SDK data file: 'Did not find SDK data file for framework 'iXGCallbackBridge' at '/Library/iXGuard/apple-sdk-cache/iPhoneOS/iXGCallbackBridge.yml''
+[debug] Loading SDK framework _LocationEssentials.yml
+[debug] Loading SDK framework UserNotifications.yml
+[debug] Loading SDK framework UniformTypeIdentifiers.yml
+[debug] Loading SDK framework UIUtilities.yml
+[debug] Loading SDK framework UIKit.yml
+[debug] Loading SDK framework os.yml
+[debug] Loading SDK framework MachO.yml
+[debug] Loading SDK framework Symbols.yml
+[debug] Loading SDK framework SwiftUICore.yml
+[debug] Loading SDK framework simd.yml
+[debug] Loading SDK framework _Builtin_intrinsics.yml
+[debug] Loading SDK framework Spatial.yml
+[debug] Loading SDK framework QuartzCore.yml
+[debug] Loading SDK framework OpenGLES.yml
+[debug] Loading SDK framework IOSurface.yml
+[debug] Loading SDK framework Metal.yml
+[debug] Loading SDK framework CoreVideo.yml
+[debug] Loading SDK framework CoreGraphics.yml
+[debug] Loading SDK framework OSLog.yml
+[debug] Loading SDK framework DeveloperToolsSupport.yml
+[debug] Loading SDK framework CoreTransferable.yml
+[debug] Loading SDK framework CoreText.yml
+[debug] Loading SDK framework Accessibility.yml
+[debug] Loading SDK framework FileProvider.yml
+[debug] Loading SDK framework DataDetection.yml
+[debug] Loading SDK framework CoreMotion.yml
+[debug] Loading SDK framework CoreLocation.yml
+[debug] Loading SDK framework CoreImage.yml
+[debug] Loading SDK framework ImageIO.yml
+[debug] Loading SDK framework SwiftUI.yml
+[debug] Loading SDK framework StoreKit.yml
+[debug] Loading SDK framework CryptoKit.yml
+[debug] Loading SDK framework LocalAuthentication.yml
+[debug] Loading SDK framework BackgroundAssets.yml
+[debug] Loading SDK framework ExtensionFoundation.yml
+[debug] Loading SDK framework Network.yml
+[debug] Loading SDK framework zlib.yml
+[debug] Loading SDK framework dnssd.yml
+[debug] Loading SDK framework Distributed.yml
+[debug] Loading SDK framework LightweightCodeRequirements.yml
+[debug] Loading SDK framework CoreMedia.yml
+[debug] Loading SDK framework CoreAudioTypes.yml
+[debug] Loading SDK framework CoreAudio.yml
+[debug] Loading SDK framework CoreData.yml
+[debug] Loading SDK framework CloudKit.yml
+[debug] Loading SDK framework AVFoundation.yml
+[debug] Loading SDK framework VideoToolbox.yml
+[debug] Loading SDK framework Synchronization.yml
+[debug] Loading SDK framework MediaToolbox.yml
+[debug] Loading SDK framework AudioToolbox.yml
+[debug] Loading SDK framework CoreMIDI.yml
+[debug] Loading SDK framework AVRouting.yml
+[debug] Loading SDK framework AVFAudio.yml
+[debug] Loading SDK framework AuthenticationServices.yml
+[debug] Failed to resolve SDK data file: 'Did not find SDK data file for framework 'iXGCallbackBridge' at '/Library/iXGuard/apple-sdk-cache/iPhoneOS/iXGCallbackBridge.yml''
+[debug] Non-bitcode metadata parser: Succesfully parsed Mach-O file: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/bcartifacts/204D40F1-E6FB-4936-9417-9C921B5BCAAC/21_os_version_check.c.o
+[info] Building Connections
+[debug] Creating ThreatCast callback for 'Prologues'
+[debug] Building monitor sending prefab with endpoint e91ac73ea94f40ff.threatcast.guardsquare.com and key 10f22d517567cc1ed6d438528524ef50fdf856eb94dbf0a4.
+[debug] Creating ThreatCast callback for 'ClockRate'
+[debug] Creating ThreatCast callback for 'SymbolTableRebinding'
+[debug] Creating ThreatCast callback for 'AntiTracing'
+[debug] Creating ThreatCast callback for 'MemoryIntegrity'
+[debug] Creating ThreatCast callback for 'FunctionChecksumming'
+[debug] Creating ThreatCast callback for 'Emulator'
+[debug] Creating ThreatCast callback for 'Debugger'
+[debug] Creating ThreatCast callback for 'HookingLibs'
+[debug] Creating ThreatCast callback for 'ExperimentalChecks'
+[debug] Building monitor sending prefab with endpoint e91ac73ea94f40ff.threatcast.guardsquare.com and key 10f22d517567cc1ed6d438528524ef50fdf856eb94dbf0a4.
+[debug] Creating ThreatCast callback for 'SystemLibrary'
+[debug] Creating ThreatCast callback for 'Jailbreak'
+[debug] Creating ThreatCast callback for 'Swizzling'
+[debug] Creating ThreatCast callback for 'IAP'
+[debug] Creating ThreatCast callback for 'TouchSimulation'
+[debug] Creating ThreatCast callback for 'DynamicExecutablePageIntegrity'
+[info] Initializing Filters
+[debug] Using default denylist for framework with name 'Other'
+[debug] Using default denylist for framework with name 'UIKit'
+[debug] Using 'AppIcon' as icon name for the resource encryption denylist. Unable to retrieve app icon files from Info.plist and Assets.car.
+[debug] [MachODependencyGraph] Sorted dependency graph: 
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libobjc.A.tbd
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libSystem.B.tbd
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Foundation.tbd
+[debug] [Mach-O  Node] /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[info] Verifying Unity callbacks
+[info] Marking Configured Entities
+[info] Marking entities according to injection budget
+[debug] Not all necessary checks for feature 'Debugger Detection' could be injected. Missing passes: ['Debugger Blockers']
+[info] Swizzling Configuration
+[info] Executing Passes
+[debug] [opt-mode] inactive.
+[debug] Adding pass 'Propagate function argument attributes'
+[debug] Adding pass 'Trampolining callbacks'
+[debug] Adding pass 'Monitor Heartbeat'
+[debug] Building monitor sending prefab with endpoint e91ac73ea94f40ff.threatcast.guardsquare.com and key 10f22d517567cc1ed6d438528524ef50fdf856eb94dbf0a4.
+[debug] Adding pass 'Canary Checks'
+[debug] Building monitor sending prefab with endpoint e91ac73ea94f40ff.threatcast.guardsquare.com and key 10f22d517567cc1ed6d438528524ef50fdf856eb94dbf0a4.
+[debug] Adding pass 'Monitor Setup'
+[debug] Adding pass 'Method Call Lowering Analysis'
+[debug] Adding pass 'Method Call Lowering Transformation'
+[debug] Adding pass 'Strip Swift Metadata'
+[debug] Adding pass 'Obfuscation Metadata'
+[debug] Adding pass 'Update String Lengths'
+[debug] Adding pass 'Method Call Hiding'
+[debug] Adding pass 'Merge Functions'
+[debug] Adding pass 'Prologue Integrity'
+[debug] Adding pass 'Code Tracing Detection'
+[debug] Adding pass 'RootHide Detection'
+[debug] Adding pass 'Emulator Check'
+[debug] Adding pass 'Anti Debugger'
+[debug] Adding pass 'Anti Process Tracing'
+[debug] Adding pass 'Debugger Hardware Breakpoints'
+[debug] Adding pass 'Apple Silicon'
+[debug] Adding pass 'Clock Rate'
+[debug] Adding pass 'Jailbreak Check'
+[debug] Adding pass 'Debugger Blockers'
+[debug] Skipping dbg because no prefab mixtures were found.
+[debug] Skipping dbg because no prefab mixtures were found.
+[debug] Adding pass 'Dylib Detection'
+[debug] Adding pass 'Symbol Table Analysis'
+[debug] Adding pass 'Symbol Table Integrity'
+[debug] Adding pass 'System Library Integrity'
+[debug] Adding pass 'Experimental Checks'
+[debug] Adding pass 'Dynamic Executable Page Integrity'
+[debug] Adding pass 'Memory Access Detection'
+[debug] Adding pass 'In-App Purchase Protection'
+[debug] Adding pass 'Touch Simulation'
+[debug] Adding pass 'Custom Exit Points'
+[debug] Adding pass 'Function Duplication'
+[debug] Adding pass 'Callback Accessor Duplication'
+[debug] Adding pass 'Function Name Randomization'
+[debug] Adding pass 'Function Checksumming'
+[debug] Adding pass 'Array indirection'
+[debug] Adding pass 'Dlsymify'
+[debug] Adding pass 'String Analysis'
+[debug] Skipping string: Not allowlisted. 'Belum Absen\x00'.
+[debug] Skipping string: Not allowlisted. 'Sudah Absen Masuk\x00'.
+[debug] Skipping string: Not allowlisted. 'Selesai\x00'.
+[debug] Skipping string: Not allowlisted. 'Terlambat\x00'.
+[debug] Skipping string: Not allowlisted. 'Pulang Awal\x00'.
+[debug] Skipping string: Not allowlisted. 'Semua\x00'.
+[debug] Skipping string: Not allowlisted. 'Hari Ini\x00'.
+[debug] Skipping string: Not allowlisted. 'Minggu Ini\x00'.
+[debug] Skipping string: Not allowlisted. 'Bulan Ini\x00'.
+[debug] Skipping string: Not allowlisted. 'SwiftUI\x00'.
+[debug] Skipping string: Not allowlisted. 'v8@?0\x00'.
+[debug] Skipping string: Not allowlisted. 'Your device is compromised\x00'.
+[debug] Skipping string: Not allowlisted. 'Sudah Absen Masuk\x00'.
+[debug] Skipping string: Not allowlisted. 'attendances.json\x00'.
+[debug] Skipping string: Not allowlisted. 'currentEmployeeId\x00'.
+[debug] Skipping string: Not allowlisted. 'Error saving to \x00'.
+[debug] Skipping string: Not allowlisted. 'Location access denied\x00'.
+[debug] Skipping string: Not allowlisted. 'v24@?0@\"NSArray\"8@\"NSError\"16\x00'.
+[debug] Skipping string: Not allowlisted. 'v8@?0\x00'.
+[debug] Skipping string: Not allowlisted. 'Fatal error\x00'.
+[debug] Skipping string: Not allowlisted. 'Down-casted Array element failed to match the target type\nExpected \x00'.
+[debug] Skipping string: Not allowlisted. 'NSArray element failed to match the Swift Array Element type\nExpected \x00'.
+[debug] Skipping string: Not allowlisted. 'v8@?0\x00'.
+[debug] Skipping string: Not allowlisted. 'ID Karyawan sudah terdaftar\x00'.
+[debug] Skipping string: Not allowlisted. 'Nama dan ID Karyawan harus diisi\x00'.
+[debug] Skipping string: Not allowlisted. 'Masukkan nama lengkap\x00'.
+[debug] Skipping string: Not allowlisted. 'Masukkan ID karyawan\x00'.
+[debug] Skipping string: Not allowlisted. 'Masukkan departemen\x00'.
+[debug] Skipping string: Not allowlisted. 'Masukkan jabatan\x00'.
+[debug] Skipping string: Not allowlisted. 'person.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'Daftar Akun Baru\x00'.
+[debug] Skipping string: Not allowlisted. 'Lengkapi data Anda untuk mulai menggunakan app absensi\x00'.
+[debug] Skipping string: Not allowlisted. 'Belum punya akun? Daftar\x00'.
+[debug] Skipping string: Not allowlisted. 'ID Karyawan tidak ditemukan\x00'.
+[debug] Skipping string: Not allowlisted. 'ID Karyawan harus diisi\x00'.
+[debug] Skipping string: Not allowlisted. 'person.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'Masukkan ID Karyawan Anda\x00'.
+[debug] Skipping string: Not allowlisted. 'Lokasi Tidak Tersedia\x00'.
+[debug] Skipping string: Not allowlisted. 'Aktifkan layanan lokasi di Pengaturan untuk menggunakan fitur ini\x00'.
+[debug] Skipping string: Not allowlisted. 'Informasi Absensi\x00'.
+[debug] Skipping string: Not allowlisted. 'arrow.down.circle\x00'.
+[debug] Skipping string: Not allowlisted. 'Mendapatkan lokasi...\x00'.
+[debug] Skipping string: Not allowlisted. 'arrow.down.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'arrow.up.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'checkmark.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'Selesai Hari Ini\x00'.
+[debug] Skipping string: Not allowlisted. 'clock.badge.questionmark\x00'.
+[debug] Skipping string: Not allowlisted. 'Belum Ada Riwayat\x00'.
+[debug] Skipping string: Not allowlisted. 'Riwayat absensi Anda akan muncul di sini\x00'.
+[debug] Skipping string: Not allowlisted. 'self\x00'.
+[debug] Skipping string: Not allowlisted. 'arrow.down.circle\x00'.
+[debug] Skipping string: Not allowlisted. 'Sudah Absen Masuk\x00'.
+[debug] Skipping string: Not allowlisted. 'Tidak ada data lokasi\x00'.
+[debug] Skipping string: Not allowlisted. 'arrow.down.circle\x00'.
+[debug] Skipping string: Not allowlisted. 'Sudah Absen Masuk\x00'.
+[debug] Skipping string: Not allowlisted. 'Ambil Foto Selfie\x00'.
+[debug] Skipping string: Not allowlisted. 'doc.text.magnifyingglass\x00'.
+[debug] Skipping string: Not allowlisted. 'Tidak ada data absensi pada bulan ini\x00'.
+[debug] Skipping string: Not allowlisted. 'calendar.badge.exclamationmark\x00'.
+[debug] Skipping string: Not allowlisted. 'clock.arrow.circlepath\x00'.
+[debug] Skipping string: Not allowlisted. 'Keluar dari Akun?\x00'.
+[debug] Skipping string: Not allowlisted. 'Anda yakin ingin keluar dari app?\x00'.
+[debug] Skipping string: Not allowlisted. 'currentEmployeeId\x00'.
+[debug] Skipping string: Not allowlisted. 'Data tidak ditemukan\x00'.
+[debug] Skipping string: Not allowlisted. 'Informasi Pribadi\x00'.
+[debug] Skipping string: Not allowlisted. 'Keluar dari Akun\x00'.
+[debug] Skipping string: Not allowlisted. 'rectangle.portrait.and.arrow.right\x00'.
+[debug] Skipping string: Not allowlisted. 'person.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'person.circle.fill\x00'.
+[debug] Skipping string: Not allowlisted. 'list.bullet.rectangle\x00'.
+[debug] Skipping string: Not allowlisted. 'checkmark.circle.fill\x00'.
+[debug] Adding pass 'String Bucketing'
+[debug] Adding pass 'String Encryption'
+[debug] Adding pass 'String Integrity'
+[debug] Adding pass 'Memory predicates'
+[debug] Adding pass 'Global indirection'
+[debug] Adding pass 'Harden Array Indirection'
+[debug] Adding pass 'Exit Points'
+[debug] Adding pass 'Simplify CFG'
+[debug] Adding pass 'Split Basic Blocks'
+[debug] Adding pass 'Phony Control Flow Obfuscation'
+[debug] Adding pass 'Indististinguishable Predicates'
+[debug] Adding pass 'Opaque Predicates'
+[debug] Adding pass 'Flatten Control Flow Obfuscation'
+[debug] Adding pass 'Diffusion'
+[debug] Adding pass 'Constant Obfuscation'
+[debug] Adding pass 'Arithmetic Obfuscation'
+[debug] Adding pass 'Force Library Load'
+[debug] Adding pass 'Reorder'
+[debug] Adding pass 'Aggregate Debug Information'
+[debug] Adding pass 'Fix up debug information of function calls'
+[debug] Adding pass 'Fix up tail calls'
+[info] Processing symbols
+[info] Recompiling
+[debug] [MachODependencyGraph] Sorted dependency graph: 
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libobjc.A.tbd
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/usr/lib/libSystem.B.tbd
+[debug] [LibInfo Node] /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Foundation.framework/Foundation.tbd
+[debug] [Mach-O  Node] /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Not embedding bitcode because it is disabled in the configuration
+[debug] Compiling in order: 
+[debug] - ricapp
+[debug] Writing in 10 threads
+[debug] Compiling in 10 threads
+[debug] Command: xcrun swiftc -frontend /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/obfuscated.bc -emit-object -disable-llvm-optzns -target arm64-apple-ios16.0 -O -frontend-parseable-output -target-sdk-version 26.2 -target-sdk-name iphoneos26.2 -Osize -o /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/protected-2.1.o
+[debug] Command: xcrun swiftc -frontend /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/obfuscated.1.bc -emit-object -disable-llvm-optzns -target arm64-apple-ios16.0 -O -frontend-parseable-output -target-sdk-version 26.2 -target-sdk-name iphoneos26.2 -o /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/protected-2.o
+[info] Creating Mach-O: ricapp
+[debug] Found `-ixg_ld_new` flag.
+[debug] Command: xcrun ld -arch arm64 -filelist /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/filelist.txt -dynamic -arch arm64 -dead_strip -platform_version ios 16.0.0 26.2 -Os -reproducible -rpath /usr/lib/swift -rpath @executable_path/Frameworks -no_adhoc_codesign /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/usr/lib/libobjc.A.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/usr/lib/libSystem.B.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/usr/lib/libobjc.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/Security.framework/Security.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation.tbd /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk/System/Library/Frameworks/Metal.framework/Metal.tbd -L/usr/lib/swift -allow_dead_duplicates -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS26.2.sdk /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/lib/darwin/libclang_rt.ios.a -o /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/arm64/linked.protected-2.o
+[debug] Command: xcrun bitcode_strip -r /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp -o /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[info] Processing native binaries
+[info] Writing IPA
+[debug] Command: xcrun dsymutil /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp -o /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/dSYMs/ricapp.app.dSYM
+[debug] Command: /Library/iXGuard/bin/ixguard-dsymutil --mapping=/Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/mapping.yml -f -o /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/dSYMs/ /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/dSYMs/ --debug-data=/Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7
+[info] Processing app: ricapp.app
+[debug] Command: xcrun strip /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[info] Ad Hoc provisioning profile will be used for signing.
+[debug] Command: /usr/bin/security find-identity -v -p codesigning
+[info] Patching entitlements '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt' with provisioning profile '/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/embedded.mobileprovision'
+[debug] Command: /usr/bin/security cms -D -i /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/embedded.mobileprovision
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print Entitlements /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/provisioning.plist
+[debug] Command: /usr/libexec/PlistBuddy -c Delete com.apple.developer.nfc.readersession.formats /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/libexec/PlistBuddy -c Delete keychain-access-groups /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/libexec/PlistBuddy -c Delete com.apple.developer.associated-domains /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/libexec/PlistBuddy -c Delete com.apple.security.application-groups /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.associated-domains /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.default-data-protection /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.devicecheck.appattest-environment /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.healthkit /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.healthkit.access /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.homekit /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.icloud-container-environment /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.icloud-container-identifiers /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.icloud-services /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.in-app-payments /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.networking.HotspotConfiguration /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.networking.multipath /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.networking.networkextension /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.networking.vpn.api /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.nfc.readersession.formats /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.pass-type-identifiers /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.payment-pass-provisioning /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.siri /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.ubiquity-container-identifiers /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.developer.ubiquity-kvstore-identifier /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.external-accessory.wireless-configuration /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print com.apple.security.application-groups /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print inter-app-audio /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print keychain-access-groups /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -x -c Print application-identifier /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt
+[debug] Command: /usr/libexec/PlistBuddy -c Delete application-identifier /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/bin/plutil -insert application-identifier -xml <string>F926M23CY4.com.rmldemo.guardsquare</string> /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/protected-2.entitlement
+[debug] Command: /usr/bin/codesign --force --sign DBB43A70EF14B0EC6C7A1636E8EB9544AD937EB5 --entitlements /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/app_entitlements.txt --timestamp=none /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app
+[debug] Command: ditto -V -c -k --norsrc /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/ /private/var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/obfapps/protected-2.ipa
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[debug] Command: /usr/bin/codesign -dv --verbose=2 /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK/ipaextract/Payload/ricapp.app/ricapp
+[info] ThreatCast mapping file for build A97FA7E2-245F-4F17-9B86-C4265181C709 uploaded to dashboard.
+[debug] Input UUID: A9E11184-B62A-30EA-B728-F628C7DDADAE (arm64)
+[debug] Output UUID: D10564F2-D801-3499-A5B3-C0A76EB51B03 (arm64)
+[info] iXGuard successfully created /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/protected-2.ipa
+[info] 
+
+STATISTICS
+----------
+
+- Name Obfuscation
+  - Symbols hidden: 436
+  - Symbols obfuscated: 1139
+  - Original function name: 356
+  - User defined entities available: 234
+  - Entities renamed: 18
+  - Entities skipped because they are part of the SDK: 25415
+  - Entities skipped because of denylist: 25
+  - Reflection methods used in this function: 18
+- Arithmetic Obfuscation
+  - Functions skipped because they were not allowlisted: 946
+  - Functions allowlisted, but without replacements: 66
+  - Substituted original arithmetic instructions: 43515
+  - Constants substituted: 37838
+- Control Flow Obfuscation
+  - Partially obfuscated functions: 921
+  - Arrayized calls to function: 9640
+  - Arrayized calls in function: 9640
+  - Hardened Arrayized calls to function: 5735
+  - Dlsymified calls to this function: 0
+  - Dlsymified functions in global variables: 130
+  - Skipped due to not linked: 24
+  - Skipped due to not being externally linked: 3500
+  - Branches diffused: 1534
+  - Functions not obfuscated because they were not allowlisted: 1235
+  - Functions not selected because they only have one basic block: 1007
+  - Indistinguishable real predicates: 140
+  - Indistinguishable opaque predicates: 449
+  - Function locations reordered: 4472
+  - Global locations reordered: 8208
+  - Basic blocks reordered: 1796
+  - Basic blocks selected: 750
+  - Selectors hidden: 67
+  - Functions duplicated: 997
+  - Call sites updated: 1659
+- Data Obfuscation
+  - Encrypted strings: 385
+  - Integrity-protected strings: 198
+- Code Integrity
+  - Symbols protected from rebinding: 348
+  - Calls to symbols protected: 348
+  - Symbols skipped due to denylist: 10
+  - Guarded function: 300
+  - External symbols skipped due to denylist: 77
+  - Skipped functions due to denylist: 76
+  - Total checks inserted: 272
+  - Functions protected: 208
+  - Function verifiers inserted: 235
+- Environment Integrity
+  - Total checks inserted: 277
+- Resource Encryption
+  - Resources skipped because they were not allowlisted: 5
+
+
+
+[warning] ============== General ==============
+[warning] Signing not configured. Application will be signed with embedded signing information. If you do not want the application to be signed, disable it in the export configuration. (sig_no_config:1215148582)
+[warning] Jailbreak detection with callback and Hooking Libraries are enabled. Please beware that Hooking Libraries can trigger on some jailbroken devices. Please refer to the manual for more information. (cfg_hooking_libs_jb_callback:1590568898)
+[warning] 'Resource Encryption': enabled with an empty allowlist. (cfg_empty_allowlist:1110329309)
+[warning] Jailbreak detection with callback and System library integrity are enabled. Please beware that System Library Integrity can trigger on some jailbroken devices. Please refer to the manual for more information. (cfg_sys_lib_jb_callback:1970965587)
+[warning] Your application is not ready for distribution because you have selected 'App Store' as distribution target but are signing for 'Ad Hoc'. As long as your are still testing iXGuard configuration, you can ignore this message. (sig_distr_not_ready:3711624173)
+[warning] iXGuard has detected missing information in your privacy manifest to include declarations required for use of Apple sensitive APIs. Learn more here: https://docs.guardsquare.com/guide/protect/mwf/in-depth/ios-privacy-manifest (privacy_manifest_auto_updated:2827034064)
+[warning] ========== Binary name: ricapp ==========
+[warning] Failed to parse reflection call 'class_getInstanceMethod' (prs_reflection:3883137676) [x12] [arm64]
+[warning] Unable to determine input of 'method_setImplementation' swizzling call (prs_swizzle:1597678856) [x2] [arm64]
+[debug] Invoking reporter
+[info] Protection report available at /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp7/protectionreport.html
+[info] Cleaning up...
+[debug] [TemporaryDir] Removing temporary directory: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK
+[debug] Removed temp directory: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/99071-ixguard-protected-2-IMOUyK

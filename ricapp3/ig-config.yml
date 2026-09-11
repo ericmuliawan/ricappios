@@ -1,0 +1,16 @@
+# KUNCI UTAMA MANDATORI
+protection:
+  # Masukkan opsi obfuscation/RASP di sini
+  enabled: true
+  code-integrity:
+    enabled: true
+    objc-calls:
+      enabled: true
+  environment-integrity:
+    enabled: true
+    jailbreak:
+      enabled: false
+
+monitor:
+  threatcast-key: "eyJ2ZXJzaW9uIjoxLCJrZXkiOiIxMGYyMmQ1MTc1NjdjYzFlZDZkNDM4NTI4NTI0ZWY1MGZkZjg1NmViOTRkYmYwYTQiLCJmbGFncyI6eyJoZWFydGJlYXRzIjp0cnVlfSwiZW5kcG9pbnQiOiJlOTFhYzczZWE5NGY0MGZmLnRocmVhdGNhc3QuZ3VhcmRzcXVhcmUuY29tIiwiaW50ZWdyYXRpb25LZXkiOiIwM2MwZWYxZGZhZDdhMGMwMjY1OTZlM2MyYmY0ZGVhZmJkMDMyMmIxZjlhMWM0M2QzODM4YzRlMzkwOGM3MWYwIiwic2VjcmV0IjoiOGEwOGNmMzJmNjNjNGVmMzQ3M2U1N2Y1ZDY4MjI4ZmE3YjYwMmY5NTg1Yjc1NzQ3ZGYxZWRmYWI1YWY1OWI1YSJ9"
+  

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,8 @@
 		891FA3FF709A3E9198BBECA7 /* AttendanceHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F824CA7A8091ED3EC3C9E /* AttendanceHistoryView.swift */; };
 		9D46DA3C0D7D740E202139AA /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCDFDE60AF6B3F78B27F8E5 /* MainTabView.swift */; };
 		C4029FDF141E4C0A3D3DDE5F /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44191AD76CC5209F75D2A4CD /* CameraView.swift */; };
+		C4EC60CF305398060074ECFB /* RASPCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EC60CE305397FD0074ECFB /* RASPCallback.swift */; };
+		C4EC60D73053B0F70074ECFB /* iXGCallbackBridge.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4EC60D130539C8C0074ECFB /* iXGCallbackBridge.xcframework */; };
 		CA0B01372CBCF98F7CD6B2E1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAECDABA86CD57B35C795599 /* HomeView.swift */; };
 		DC5D83C89F8203354C3B0B4F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45A83E7937FD54876D9F4F1D /* ProfileView.swift */; };
 		F26AE568EF6036457F08B6B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093AE86F29F17CD9A3BFEA17 /* DataService.swift */; };
@@ -70,6 +72,8 @@
 		ABC1260DB2AE5374BAC08827 /* Attendance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attendance.swift; sourceTree = "<group>"; };
 		B67C1764789EFD548350A91F /* MonthlyReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyReportView.swift; sourceTree = "<group>"; };
 		B88379B7E2E571B6824B0913 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C4EC60CE305397FD0074ECFB /* RASPCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RASPCallback.swift; sourceTree = "<group>"; };
+		C4EC60D130539C8C0074ECFB /* iXGCallbackBridge.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:ELFQ2L747V:GuardSquare NV"; lastKnownFileType = wrapper.xcframework; name = iXGCallbackBridge.xcframework; path = ../../../../../Library/iXGuard/resources/iXGCallbackBridge.xcframework; sourceTree = "<group>"; };
 		DBCDFDE60AF6B3F78B27F8E5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F2B11426EC9DFA90B536277F /* AttendanceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EC60D73053B0F70074ECFB /* iXGCallbackBridge.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +110,7 @@
 				04E39A762FF875BA00962D8E /* ricapp */,
 				04E39A872FF875BD00962D8E /* ricappTests */,
 				04E39A912FF875BD00962D8E /* ricappUITests */,
+				C4EC60D030539C8C0074ECFB /* Frameworks */,
 				04E39A752FF875BA00962D8E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 		40A9B7E70A8BB7A168CEEC12 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C4EC60CE305397FD0074ECFB /* RASPCallback.swift */,
 				093AE86F29F17CD9A3BFEA17 /* DataService.swift */,
 				6C97E3C568FAE348D62BD5EF /* LocationService.swift */,
 				6FD38C8A1291C7BCED42CB66 /* CameraService.swift */,
@@ -215,6 +222,14 @@
 				ABC1260DB2AE5374BAC08827 /* Attendance.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C4EC60D030539C8C0074ECFB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4EC60D130539C8C0074ECFB /* iXGCallbackBridge.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D459F4720AC1BD8253201DB6 /* Profile */ = {
@@ -357,6 +372,7 @@
 			files = (
 				04E39A7A2FF875BA00962D8E /* ContentView.swift in Sources */,
 				04E39A782FF875BA00962D8E /* ricappApp.swift in Sources */,
+				C4EC60CF305398060074ECFB /* RASPCallback.swift in Sources */,
 				6F361B33DF675254FA21526B /* User.swift in Sources */,
 				81EE2963456B23164AE57985 /* Attendance.swift in Sources */,
 				F26AE568EF6036457F08B6B1 /* DataService.swift in Sources */,
@@ -534,7 +550,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ricapp/Preview Content\"";
-				DEVELOPMENT_TEAM = KC33LWZCH4;
+				DEVELOPMENT_TEAM = F926M23CY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikasi ini menggunakan kamera untuk mengambil foto selfie saat check-in.";
@@ -565,7 +581,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ricapp/Preview Content\"";
-				DEVELOPMENT_TEAM = KC33LWZCH4;
+				DEVELOPMENT_TEAM = F926M23CY4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Aplikasi ini menggunakan kamera untuk mengambil foto selfie saat check-in.";

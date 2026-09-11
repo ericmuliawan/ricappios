@@ -1,0 +1,11 @@
+[info] Using random seed: 518847656
+[info] Guardsquare iXGuard 4.16.18 stable (e6a4b477222b)
+[info] 2026-9-10 11:5 Copyright © Guardsquare 2026
+[debug] Logging level set to info for console, trace for log file
+[debug] Release build B04F771876993953A67D2458BF36D5E7
+[debug] Command line: "/Library/iXGuard/bin/ixguard_SWIFT62" "-c=ig-config.yml" "-o=protected.ipa" "ricapp.ipa"
+[debug] Reading license: '/Users/technicalrml/.config/guardsquare/licenses/iXGuard/a088fb36-0e35-4b12-acb3-da92cd357cea/ixguard-license.txt'
+[info] Using Xcode 26.3
+[error] The output file already exists: /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp 2026-09-10 10-50-52/protected.ipa
+[debug] [TemporaryDir] Removing temporary directory: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/91365-ixguard-protected-plwSXd
+[debug] Removed temp directory: /var/folders/x6/3d_zrp6x0rz7zfqhpcyvkb540000gn/T/91365-ixguard-protected-plwSXd

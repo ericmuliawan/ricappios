@@ -1,0 +1,99 @@
+# KUNCI UTAMA MANDATORI
+protection:
+  # Masukkan opsi obfuscation/RASP di sini
+  enabled: true
+  names:
+    enabled: true
+    obfuscate-symbols: true
+  arithmetic-operations:
+    enabled: true
+    allowlists: # Allowlists are necessary for arithmetic obfuscation
+        # Level can be low | medium | high
+        - level: medium
+          structured-allowlist:
+            interfaces:
+              - name: ".*"
+                instancemethods:
+                  - name: "foo"
+          allowlist:
+            - "foo.*"
+            - "bar.*"
+        - level: high
+          allowlist:
+            - "PasswordDecryptionFn"
+  code-integrity: 
+    enabled: true
+    objc-calls:
+      enabled: true  
+    functions:
+      enabled: true
+    tracing:
+      enabled: true
+    system-library:
+      enabled: true
+  control-flow:
+    enabled: true
+    logic:
+      enabled: true
+      allowlists: # Allowlists are necessary for control-flow
+          # Level can be low | medium | high
+          - level: medium
+            structured-allowlist:
+              interfaces:
+              - name: ".*"
+                instancemethods:
+                - name: "foo"
+            allowlist:
+              - "foo.*"
+              - "bar.*"
+          - level: high
+            allowlist:
+              - "PasswordDecryptionFn"
+    calls:
+      enabled: true
+  environment-integrity:
+    enabled: true
+    debugger:
+      enabled: true
+      callback: "my_callback"
+    emulator:
+      enabled: true
+      continue-on-callback: false
+      callback: "my_callback"
+    jailbreak:
+      enabled: true
+      continue-on-callback: false
+      callback: "my_callback"
+    touch-simulation:
+      enabled: true
+      callback: "my_callback"
+    memory-access:
+      enabled: true
+      callback: "my_callback"
+    clock-rate:
+      enabled: true
+      callback: "my_callback"
+  data:
+    enabled: true
+    # Defines strings that must be encrypted
+    allowlist:
+      - "license(.*)"
+      - "(.*)key"
+    # Defines functions where strings must be encrypted
+    location-structured-allowlist:
+      interfaces:
+        - name: "baz"
+          instancemethods:
+            - name: "instanceMethodNameOrRegex"
+          classmethods:
+            - name: "classMethodNameOrRegex"
+    location-allowlist:
+        - "fullFunctionNameOrRegex"
+  app-integrity:
+    enabled: false
+  resources:
+    enabled: true 
+
+monitor:
+  threatcast-key: "eyJ2ZXJzaW9uIjoxLCJrZXkiOiIxMGYyMmQ1MTc1NjdjYzFlZDZkNDM4NTI4NTI0ZWY1MGZkZjg1NmViOTRkYmYwYTQiLCJmbGFncyI6eyJoZWFydGJlYXRzIjp0cnVlfSwiZW5kcG9pbnQiOiJlOTFhYzczZWE5NGY0MGZmLnRocmVhdGNhc3QuZ3VhcmRzcXVhcmUuY29tIiwiaW50ZWdyYXRpb25LZXkiOiIwM2MwZWYxZGZhZDdhMGMwMjY1OTZlM2MyYmY0ZGVhZmJkMDMyMmIxZjlhMWM0M2QzODM4YzRlMzkwOGM3MWYwIiwic2VjcmV0IjoiOGEwOGNmMzJmNjNjNGVmMzQ3M2U1N2Y1ZDY4MjI4ZmE3YjYwMmY5NTg1Yjc1NzQ3ZGYxZWRmYWI1YWY1OWI1YSJ9"
+  

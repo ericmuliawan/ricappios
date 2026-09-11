@@ -58,6 +58,18 @@ struct LoginView: View {
                     .font(.subheadline)
                 
                 Spacer()
+                
+                Button(action: callback) {
+                    Text("show callback")
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                }
+                .padding(.horizontal)
+                .disabled(employeeId.isEmpty)
             }
             .navigationTitle("")
             .navigationBarHidden(true)
@@ -70,6 +82,7 @@ struct LoginView: View {
     }
     
     private func login() {
+        print("run login")
         guard !employeeId.isEmpty else {
             errorMessage = "ID Karyawan harus diisi"
             showError = true
@@ -82,6 +95,11 @@ struct LoginView: View {
             errorMessage = "ID Karyawan tidak ditemukan"
             showError = true
         }
+    }
+    
+    private func callback() {
+        print("run")
+        presentAlert()
     }
 }
 

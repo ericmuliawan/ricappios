@@ -1,0 +1,110 @@
+{
+	"buildReport": {
+		"build_info": {
+			"input_type": "UNSPECIFIED_INPUT_TYPE",
+			"product": "IXGUARD",
+			"product_version": "4.16.18 stable",
+			"os": "MAC",
+			"os_version": "26.4",
+			"result": "ERROR",
+			"result_error": "Fatal runtime error occurred : The output file already exists: /Users/technicalrml/Documents/ProjectIos/ricappios/ricapp 2026-09-10 10-50-52/protected.ipa",
+			"build_platform_version": "Xcode 26.3",
+			"threatcast": true,
+			"zimperium": true,
+			"auto_config": "OMITTED",
+			"triggered_rules": [
+				"report_runtime_threat_monitoring_not_supported"
+			],
+			"metadata": {
+				"hostArch": "arm64"
+			},
+			"build_id": "EF1495D6-F5E7-40FF-9A24-4D975107BFE3",
+			"redacted_config": {
+				"build": {
+					"build-id": "REDACTED"
+				},
+				"monitor": {
+					"threatcast-key": "eyJ2ZXJzaW9uIjoxLCJrZXkiOiIxMGYyMmQ1MTc1NjdjYzFlZDZkNDM4NTI4NTI0ZWY1MGZkZjg1NmViOTRkYmYwYTQiLCJmbGFncyI6eyJoZWFydGJlYXRzIjp0cnVlfSwiZW5kcG9pbnQiOiJlOTFhYzczZWE5NGY0MGZmLnRocmVhdGNhc3QuZ3VhcmRzcXVhcmUuY29tIiwiaW50ZWdyYXRpb25LZXkiOiIwM2MwZWYxZGZhZDdhMGMwMjY1OTZlM2MyYmY0ZGVhZmJkMDMyMmIxZjlhMWM0M2QzODM4YzRlMzkwOGM3MWYwIiwic2VjcmV0IjoiOGEwOGNmMzJmNjNjNGVmMzQ3M2U1N2Y1ZDY4MjI4ZmE3YjYwMmY5NTg1Yjc1NzQ3ZGYxZWRmYWI1YWY1OWI1YSJ9",
+					"upload-threatcast-mapping": true
+				},
+				"protection": {
+					"names": {
+						"enabled": false,
+						"obfuscate-metadata": false,
+						"obfuscate-symbols": false,
+						"hide-symbols": false,
+						"obfuscate-flutter-metadata": false,
+						"hide-swift-reflectionmd": false
+					},
+					"arithmetic-operations": {
+						"enabled": true
+					},
+					"control-flow": {
+						"enabled": true,
+						"logic": {
+							"enabled": true
+						},
+						"calls": {
+							"enabled": false
+						}
+					},
+					"data": {
+						"enabled": true
+					},
+					"code-integrity": {
+						"enabled": true,
+						"functions": {
+							"enabled": true
+						},
+						"objc-calls": {
+							"enabled": true
+						},
+						"system-library": {
+							"enabled": true
+						},
+						"tracing": {
+							"enabled": true
+						}
+					},
+					"app-integrity": {
+						"enabled": false,
+						"signing-info": false,
+						"loaded-libraries": false,
+						"macho-fields": false
+					},
+					"environment-integrity": {
+						"enabled": true,
+						"jailbreak": {
+							"enabled": false
+						},
+						"debugger": {
+							"enabled": true
+						},
+						"clock-rate": {
+							"enabled": false
+						},
+						"memory-access": {
+							"enabled": false
+						},
+						"iap": {
+							"enabled": true
+						},
+						"touch-simulation": {
+							"enabled": true
+						},
+						"hooking-libs": {
+							"enabled": true
+						},
+						"emulator": {
+							"enabled": true
+						}
+					},
+					"resources": {
+						"enabled": true
+					}
+				}
+			}
+		}
+	},
+	"periodicUpdates": null
+}
